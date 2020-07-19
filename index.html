@@ -1,102 +1,128 @@
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Production</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header class="header">
         <div id="video-bg">
-            <video width="100%" height="auto" preload="auto" autoplay muted loop>
-                <source src="img/backVideo.mp4" type="video/mp4"></source>
+            <video preload="auto" autoplay muted loop>
+                <source src="img/backVideo.mp4" type="video/mp4">
+                </source>
             </video>
         </div>
-        <div class="nav">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-md-1 col-md-4">
-                        <img src="img/logo.svg" alt="Video Production" class="logo">
-                    </div>
-                    <div class="offset-md-1 col-md-6">
-                            <a href="#" class="nav-href">Портфолио</a>
-                            <a href="#" class="nav-href">Цены</a>
-                            <a href="#" class="nav-href">Контакты</a>
+        <div class="container">
+            <div class="header__top">
+                <a href="" class="title-img">
+                    <img src="img/logo.svg" alt="Video Production">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-href menu-item">
+                            <a href="#" class="menu__list-href-link">Портфолио</a>
+                        </li>
+                        <li class="menu__list-href menu-item">
+                            <a href="#" class="menu__list-href-link">Цены</a>
+                        </li>
+                        <li class="menu__list-href menu-item">
+                            <a href="#" class="menu__list-href-link">Контакты</a>
+                        </li>
 
-                            |
-                            
-                            <button class="social">
-                                <img src="img/instagram.svg" alt="Instagram" >
-                            </button>
-                            <button class="social">
-                                <img src="img/vk.svg" alt="VK">
-                            </button>
-                            <button class="social">
-                                <img src="img/youtube.svg" alt="Youtube">
-                            </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <li class="menu__list-stick menu-item">
+                        </li>
 
-        <div class="offer">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-md-1 col-md-11">
-                        <div class="offer-cont">
-                            <h1 class="offer-cont__title">
-                                VIDEO<br/>
-                                PRODUCTION
-                            </h1>
-                            <button class="offer-cont__btn btn">
-                                Портфолио
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                        <li class="menu__list-social menu-item">
+                            <a href="">
+                                <img src="./img/instagram.svg" alt="instagram" class="menu__list-social-item">
+                            </a>
+                        </li>
+                        <li class="menu__list-social menu-item">
+                            <a href="">
+                                <img src="./img/vk.svg" alt="VK" class="menu__list-social-item">
+                            </a>
+                        </li>
+                        <li class="menu__list-social menu-item">
+                            <a href="">
+                                <img src="./img/youtube.svg" alt="Youtube" class="menu__list-social-item">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+            <h1 class="header__title">
+                VIDEO<br />
+                PRODUCTION
+                <button>Портфолио</button>
+            </h1>
         </div>
     </header>
+
     <section class="portfolio">
-        <h2 class="portfolio-title">ПОРТФОЛИО</h2>
-        
-        <div class="content">
-            <div class="row content-tab">
-                <div class="col-md-6">
-                    <video width="100%" height="auto" preload="auto" poster="img/video1.jpg" class="content-video">
-                        <source src="#" type="video/mp4"></source>
-                    </video>
-                    <a class="play-btn"></a>
-                </div>
-                <div class="col-md-6">
-                    <video width="100%" height="auto" preload="auto" poster="img/video2.jpg" class="content-video">
-                        <source src="#" type="video/mp4"></source>
-                    </video>
-                    <a class="play-btn"></a>
-                </div>
-            </div>
-
-            <div class="row content-tab">
-                <div class="col-md-6">
-                    <video width="100%" height="auto" preload="auto" poster="img/video3.jpg" class="content-video">
-                        <source src="#" type="video/mp4"></source>
-                    </video>
-                    <a class="play-btn"></a>
-                </div>
-                <div class="col-md-6">
-                    <video width="100%" height="auto" preload="auto" poster="img/video4.jpg" class="content-video">
-                        <source src="#" type="video/mp4"></source>
-                    </video>
-                    <a class="play-btn"></a>
+        <div class="container">
+            <h3 class="portfolio__title title">ПОРТФОЛИО</h3>
+            <div class="portfolio__inner">
+                <div class="portfolio__gallery">
+                    <div class="portfolio__videos">
+                        <div class="portfolio__videos-card">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=_ROn-ByhGgM">
+                                <img class="card-img"
+                                    src="img/video1.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <img class="card-play" src="img/play.svg" alt="">
+                                <p class="card-text">2109VHS</p>
+                            </div>
+                        </div>
+                        <div class="portfolio__videos-card">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=Vq8Xu0F2R44">
+                                <img class="card-img"
+                                    src="img/video2.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <img class="card-play" src="img/play.svg" alt="">
+                                <p class="card-text">Совместный холст DanielWrighte&Art.balonnn</p>
+                            </div>
+                        </div>
+                        <div class="portfolio__videos-card">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=tpYMe6bcNM4">
+                                <img class="card-img"
+                                    src="img/video3.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <img class="card-play" src="img/play.svg" alt="">
+                                <p class="card-text">КОРОБОК 29hz</p>
+                            </div>
+                        </div>
+                        <div class="portfolio__videos-card">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=o1m7dCmwEHk">
+                                <img class="card-img"
+                                    src="img/video4.jpg" />
+                            </a>
+                            <div class="card-body">
+                                <img class="card-play" src="img/play.svg" alt="">
+                                <p class="card-text">Искра 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="portfolio__btn">Смотреть все</button>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <button class="section-cont__btn btn">Смотреть все</button>
-        </div>
     </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
